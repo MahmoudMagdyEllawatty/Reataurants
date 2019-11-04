@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    tools:context=".ui.ChooseDelivery">
+    <TimePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/datePicker1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/d20"
+        android:textColor="@color/text_dark_grey"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:id="@+id/t_choosetime"
+        android:background="#FFE6D6"
+        android:text="@string/times"
+        android:padding="@dimen/dimen_10"
+        android:layout_height="50dp" />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Areas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary">
+
+
+            <TextView
+                android:id="@+id/parts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cart"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="@dimen/d10"
+            android:layout_above="@id/tootl"
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="3dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d100"
+            android:id="@+id/tootl"
+            android:layout_marginLeft="@dimen/d10"
+            android:layout_marginRight="@dimen/d10"
+            android:layout_marginBottom="@dimen/d60"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/roundedborder">
+
+            <TextView
+                android:id="@+id/toatl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="center"
+                android:padding="@dimen/d6"
+                android:visibility="gone"
+                android:text="@string/totalprice"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/totall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/toatl"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="@dimen/d6"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/make_order"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/layout_bg"
+            android:gravity="center"
+            android:text="@string/Follow"
+            android:textColor="@color/white_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

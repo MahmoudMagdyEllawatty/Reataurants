@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    tools:context=".ui.ChooseDelivery">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:id="@+id/parts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/MakeOrder"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+            <ImageView
+                android:id="@+id/bt_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:tint="@color/black_90"
+                android:src="@drawable/left" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:layout_width="@dimen/d120"
+            android:layout_height="@dimen/d120"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="@dimen/d10"
+            android:id="@+id/belowd"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/orders_profile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/belowd"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_10"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/tdd"
+            android:text="@string/plaseaddres"
+            android:padding="@dimen/dimen_10"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/tdd"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/d20"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:id="@+id/t_chooseAddress"
+            android:background="#E2E7F5"
+            android:text="@string/ChooseAddress"
+            android:padding="@dimen/dimen_10"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/t_chooseAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/d20"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:id="@+id/t_choosetime"
+            android:background="#FFE6D6"
+            android:text="@string/times"
+            android:padding="@dimen/dimen_10"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d50"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white_color"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:id="@+id/t_makeOrder"
+            android:text="@string/MakeOrder"
+            android:layout_margin="25dp"/>
+    </RelativeLayout>
+</RelativeLayout>

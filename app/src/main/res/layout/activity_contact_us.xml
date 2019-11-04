@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyOrders">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary">
+
+
+            <TextView
+                android:id="@+id/parts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/menu_tools"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/arrwo"
+                android:layout_gravity="start|center_vertical"
+                android:layout_margin="@dimen/d10"
+                android:id="@+id/img_back"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/toolbar">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/roundedborder"
+                    android:ems="10"
+                    android:gravity="start|center"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/d10"
+
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_below="@+id/et_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/roundedborder"
+                    android:ems="10"
+                    android:gravity="start|center"
+                    android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
+
+                    android:padding="@dimen/d10"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_below="@+id/et_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/roundedborder"
+                    android:ems="10"
+                    android:gravity="start|center"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+
+                    android:padding="@dimen/d10"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_below="@+id/et_phone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/roundedborder"
+                    android:ems="10"
+                    android:gravity="start|center"
+                    android:hint="@string/Tilte"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/d10"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+
+                    android:id="@+id/problem"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/subject"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/d30"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginRight="@dimen/d30"
+                    android:background="@drawable/roundedborder"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="@string/problrm"
+
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/d10"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sentt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d50"
+                    android:layout_below="@id/problem"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/d30"
+                    android:background="@drawable/layout_bg"
+                    android:text="@string/Send"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

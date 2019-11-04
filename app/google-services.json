@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "998771684389",
+    "firebase_url": "https://halawyat-e0ec3.firebaseio.com",
+    "project_id": "halawyat-e0ec3",
+    "storage_bucket": "halawyat-e0ec3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998771684389:android:aa8037959c37c4f759bbcc",
+        "android_client_info": {
+          "package_name": "comhala.halawyat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998771684389-4ru4bi3usjcn51cqsvirqr4vk8m9j64h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrGBLk15DJMFobWvXknKOCacSyAkEF5L8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998771684389-4ru4bi3usjcn51cqsvirqr4vk8m9j64h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

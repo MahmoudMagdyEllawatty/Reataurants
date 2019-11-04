@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/myorders"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/user"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/contact"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/terms"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/questions"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_send" />
+        <item
+            android:id="@+id/nav_send1"
+            android:icon="@drawable/about"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_home2" />
+        <item
+            android:id="@+id/nav_send22"
+            android:icon="@drawable/lang"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/changelang" />
+        <item
+            android:id="@+id/nav_send23"
+            android:icon="@drawable/bell"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/Notifiactions" />
+        <item
+            android:id="@+id/nav_send2"
+            android:icon="@drawable/logout"
+            android:iconTint="@color/colorPrimaryDark"
+            android:title="@string/menu_home1" />
+    </group>
+</menu>

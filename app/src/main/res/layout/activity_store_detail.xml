@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StoreDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/t_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/menu_home2"
+            android:textColor="@color/white_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/t_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/left" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/td"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toll"
+        android:background="#4F000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/src_images_recipes_bskoyt_balshokolatt" />
+
+        <TextView
+            android:id="@+id/t_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:text="@string/menu_home2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/roundedborder">
+
+            <RatingBar
+                android:id="@+id/rate"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:progressTint="#FB980A"
+                android:rating="5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/t_gs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/td"
+        android:background="@drawable/header">
+
+
+        <TextView
+            android:id="@+id/t_all"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/line"
+            android:gravity="center"
+            android:text="@string/last"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_ser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/t_all"
+            android:layout_toRightOf="@+id/t_all"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/t_gs"
+        android:layout_margin="5dp"
+        android:background="#F5F5F5"
+        android:scrollbars="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="@dimen/d40"
+            android:layout_height="@dimen/d40"
+            android:id="@+id/t_cart"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dimen_10"
+            android:src="@drawable/cart"/>
+        <TextView
+            android:id="@+id/t_deleviry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dimen_5"
+            android:text="@string/DeliveryCharge"
+            android:textColor="@color/white_color"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

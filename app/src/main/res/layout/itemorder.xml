@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="@drawable/roundedborder">
+
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/logog" />
+
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/item_img"
+        android:layout_toRightOf="@id/item_img"
+        android:gravity="start"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Ocassional Chair"
+        android:textColor="@color/text_dark_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_qnty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name"
+
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@id/item_img"
+        android:layout_toRightOf="@id/item_img"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="1200"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="1200"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/error_clr"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:text="1200"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+
+
+
