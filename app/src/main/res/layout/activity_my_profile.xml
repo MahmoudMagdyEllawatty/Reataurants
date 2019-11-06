@@ -60,17 +60,6 @@
         </RelativeLayout>
     </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/tr"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_below="@id/et_nme"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="17dp"
-            android:background="#E2E7F5"
-            android:padding="10dp"
-            android:src="@drawable/mobile" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/et_phone"
@@ -78,11 +67,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_nme"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:layout_toEndOf="@+id/tr"
             android:layout_toRightOf="@+id/tr"
             app:boxStrokeColor="@color/colorPrimary">
@@ -94,20 +83,12 @@
                 android:hint="@string/phone"
                 android:textSize="12sp"
                 android:inputType="phone"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:drawableLeft="@drawable/phone"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <ImageView
-            android:id="@+id/tr2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_below="@id/tds"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="17dp"
-            android:background="#E2E7F5"
-            android:padding="10dp"
-            android:src="@drawable/user" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/et_nme"
@@ -115,13 +96,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tds"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@id/tr2"
-            android:layout_toRightOf="@id/tr2"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             app:boxStrokeColor="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -131,20 +110,12 @@
                 android:hint="@string/username"
                 android:inputType="text"
                 android:textSize="12sp"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:drawableLeft="@drawable/account"
+                android:drawableStart="@drawable/account"
+                android:drawablePadding="20dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <ImageView
-            android:id="@+id/tr3"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_below="@id/et_phone"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="17dp"
-            android:background="#E2E7F5"
-            android:padding="10dp"
-            android:src="@drawable/email" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/et_meail"
@@ -152,14 +123,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_phone"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_toEndOf="@id/tr3"
-            app:boxStrokeColor="@color/colorPrimary"
-            android:layout_toRightOf="@id/tr3">
+            android:layout_marginRight="16dp"
+            app:boxStrokeColor="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
@@ -168,7 +137,10 @@
                 android:hint="@string/Email"
                 android:textSize="12sp"
                 android:inputType="textEmailAddress"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:drawableLeft="@drawable/mail"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="20dp"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -180,7 +152,7 @@
             android:layout_marginStart="@dimen/dimen_20"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="@dimen/dimen_20"
-            android:background="@drawable/header"
+            android:background="@color/colorPrimary"
             android:text="@string/edit"
             android:textAllCaps="false"
             android:textColor="@color/white_color"

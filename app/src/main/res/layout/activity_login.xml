@@ -62,7 +62,8 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingRight="16dp"
-            android:drawableLeft="@drawable/phone"/>
+            android:drawableLeft="@drawable/phone"
+            android:drawableStart="@drawable/phone"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
