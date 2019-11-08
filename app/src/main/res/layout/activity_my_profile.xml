@@ -9,7 +9,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/header">
+        android:background="@color/grey_clr">
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         android:id="@+id/tds"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d200"
-        android:background="@drawable/header">
+        android:background="@color/grey_clr">
 
         <RelativeLayout
             android:layout_width="150dp"
